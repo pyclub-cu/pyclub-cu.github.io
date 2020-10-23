@@ -1771,7 +1771,8 @@ input, select, textarea {
 		text-align: center;
 	}
 
-	header.major {
+	header.
+	{
 		width: -moz-max-content;
 		width: -webkit-max-content;
 		width: -ms-max-content;
@@ -2717,198 +2718,97 @@ input, select, textarea {
 			opacity: 0.25;
 		}
 
-/* Team */
-    .team {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
+
+/* Team Page */
+
+    .team-inner {
 		display: flex;
-		-moz-flex-wrap: wrap;
-		-webkit-flex-wrap: wrap;
-		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		border-top: 0 !important;
+		padding: 2em 7em 2em 7em;
+	}
+	
+	.team {
+		flex: 0 0 20%;
+		padding: 20px;
+		position: relative;
+	}
+	
+	.team * {
+		margin:0;
+		box-sizing: border-box;
+	}
+	
+	.team img {
+		border-radius:0%;
+		max-width:100%;
+		margin-left: auto;
+		margin-right:auto;
+	}
+	
+	
+	.team:hover img{
+		opacity:0.4;
+	}
+	
+	
+	.plus {
+	  position: absolute;
+	  top: 40%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  opacity:0;
+	  z-index:4;
+	} 
+	
+	.plus a {
+		font-size:150px;
+		text-decoration:none;
+		border: none;
+	}
+	
+	.plus a:hover {
+		color: #ffffff !important;
+	}
+	
+	
+	.team:hover .plus {
+		opacity:1;
+	}
+	
+	.major img{
+		margin-left:20px;
+		margin-bottom:-5px;
+	}
+	
+@media screen and (max-width: 1100px) {
+
+			.team-inner {
+				padding: 1em 4em 1em 4em;
+			}
+			
+			.team {
+				flex: 0 0 33.33%;
+				padding: 20px;
+				position: relative;
+			}
 	}
 
-		.team + * {
-			border-top: 0 !important;
-		}
+@media screen and (max-width: 640px) {
 
-
-	.team article {
-			-moz-align-items: center;
-			-webkit-align-items: center;
-			-ms-align-items: center;
-			align-items: center;
-			display: -moz-flex;
-			display: -webkit-flex;
-			display: -ms-flex;
-			display: flex;
-			-moz-transition: -moz-transform 0.25s ease, opacity 0.25s ease, -moz-filter 1s ease, -webkit-filter 1s ease;
-			-webkit-transition: -webkit-transform 0.25s ease, opacity 0.25s ease, -webkit-filter 1s ease, -webkit-filter 1s ease;
-			-ms-transition: -ms-transform 0.25s ease, opacity 0.25s ease, -ms-filter 1s ease, -webkit-filter 1s ease;
-			transition: transform 0.25s ease, opacity 0.25s ease, filter 1s ease, -webkit-filter 1s ease;
-			padding: 4em 4em 2em 4em ;
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: cover;
-			cursor: default;
-			height: 40vh;
-			max-height: 40em;
-			min-height: 23em;
-			overflow: hidden;
-			position: relative;
-			width: 33.33%;
-		}
-		
-		
-		.team article .image {
-				display: none;
+		.team {
+				flex: 0 0 50%;
 			}
+	}
+	
+@media screen and (max-width: 480px) {
 
-			.team article header {
-				position: relative;
-				z-index: 3;
+		.team {
+				flex: 0 0 100%;
 			}
-
-			.team article h3 {
-				font-size: 1.75em;
-			}
-
-				.team article h3 a:hover {
-					color: inherit !important;
-				}
-
-			.team article .link.primary {
-				border: 0;
-				height: 100%;
-				left: 0;
-				position: absolute;
-				top: 0;
-				width: 100%;
-				z-index: 4;
-			}
-
-			.team article:before {
-				-moz-transition: opacity 0.5s ease;
-				-webkit-transition: opacity 0.5s ease;
-				-ms-transition: opacity 0.5s ease;
-				transition: opacity 0.5s ease;
-				bottom: 0;
-				content: '';
-				display: block;
-				height: 100%;
-				left: 0;
-				opacity: 0.85;
-				position: absolute;
-				width: 100%;
-				z-index: 2;
-			}
-
-			.team article:after {
-				background-color: rgba(36, 41, 67, 0.25);
-				content: '';
-				display: block;
-				height: 100%;
-				left: 0;
-				position: absolute;
-				top: 0;
-				width: 100%;
-				z-index: 1;
-			}
-
-			.team article:hover:before {
-				opacity: 0;
-			}
-
-			.team article.is-transitioning {
-				-moz-transform: scale(0.95);
-				-webkit-transform: scale(0.95);
-				-ms-transform: scale(0.95);
-				transform: scale(0.95);
-				-moz-filter: blur(0.5em);
-				-webkit-filter: blur(0.5em);
-				-ms-filter: blur(0.5em);
-				filter: blur(0.5em);
-				opacity: 0;
-			}
-
-			.team article:nth-child(4n - 1), .team article:nth-child(4n - 2) {
-				width: 33.33%;
-			}
-
-			.team article:nth-child(6n - 5):before {
-				background-color: #6fc3df;
-			}
-
-			.team article:nth-child(6n - 4):before {
-				background-color: #8d82c4;
-			}
-
-			.team article:nth-child(6n - 3):before {
-				background-color: #ec8d81;
-			}
-
-			.team article:nth-child(6n - 2):before {
-				background-color: #e7b788;
-			}
-
-			.team article:nth-child(6n - 1):before {
-				background-color: #8ea9e8;
-			}
-
-			.team article:nth-child(6n):before {
-				background-color: #87c5a4;
-			}
-
-		@media screen and (max-width: 1280px) {
-
-			.team article {
-				padding: 4em 3em 2em 3em ;
-				height: 30vh;
-				max-height: 30em;
-				min-height: 20em;
-			}
-
-		}
-
-		@media screen and (max-width: 980px) {
-
-			.team article {
-				width: 50% !important;
-			}
-
-		}
-
-		@media screen and (max-width: 736px) {
-
-			.team article {
-				padding: 3em 1.5em 1em 1.5em ;
-				height: 16em;
-				max-height: none;
-				min-height: 0;
-			}
-
-				.team article h3 {
-					font-size: 1.5em;
-				}
-
-		}
-
-		@media screen and (max-width: 480px) {
-
-			.team {
-				display: block;
-			}
-
-				.team article {
-					height: 20em;
-					width: 100% !important;
-				}
-
-		}
-
-
+	}
+	
+	
+	
 /* Tiles */
 
 	.tiles {
@@ -3029,7 +2929,7 @@ input, select, textarea {
 			}
 
 			.tiles article:nth-child(6n - 5):before {
-				background-color: #6fc3df;
+				background-color: #6CA6C1;
 			}
 
 			.tiles article:nth-child(6n - 4):before {
@@ -3689,7 +3589,7 @@ input, select, textarea {
 			}
 
 		#banner.style1:after {
-			background-color: #6fc3df;
+			background-color: #6CA6C1;
 		}
 
 		#banner.style2:after {
