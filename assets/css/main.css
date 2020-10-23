@@ -168,6 +168,18 @@ input, select, textarea {
 			/* color: #53e3fb !important; ORIGINAL COLOR*/
 			color: #6FC3DF !important;
 		}
+		
+		nav a:hover {
+			border-bottom-color: transparent;
+			/* color: #53e3fb !important; ORIGINAL COLOR*/
+			color: #ffffff !important;
+		}
+
+		nav a:active {
+			/* color: #53e3fb !important; ORIGINAL COLOR*/
+			color: #ffffff !important;
+		}
+
 
 	strong, b {
 		color: #ffffff;
@@ -3251,11 +3263,13 @@ input, select, textarea {
 			}
 
 			#header .logo:hover strong {
-				background-color: #9bf1ff;
+				background-color: #242943;
+				color: #ffffff;
 			}
 
 			#header .logo:active strong {
-				background-color: #53e3fb;
+				background-color: #242943;
+				color: #ffffff;
 			}
 
 		#header nav {
@@ -3285,7 +3299,7 @@ input, select, textarea {
 				position: relative;
 				vertical-align: middle;
 			}
-
+			
 				#header nav a:last-child {
 					padding-right: 1.5em;
 				}
