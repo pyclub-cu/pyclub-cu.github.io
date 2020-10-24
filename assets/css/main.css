@@ -3714,6 +3714,7 @@ input, select, textarea {
 		@media screen and (max-width: 480px) {
 
 			#banner {
+				display:none;
 				padding: 3em 0 1.5em 0 ;
 				background-image:url('../../images/bluediversmall.png') !important;
 				background-size:100% auto;
