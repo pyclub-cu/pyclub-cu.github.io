@@ -3516,10 +3516,13 @@ input, select, textarea {
 		display: -ms-flex;
 		display: flex;
 		padding: 6em 0 2em 0 ;
-		background-attachment: fixed;
+		background-attachment: scroll;
 		background-position: center;
 		background-repeat: no-repeat;
-		background-size: cover;
+		
+		background-size:100% auto;
+		
+		
 		border-bottom: 0 !important;
 		cursor: default;
 		height: 60vh;
@@ -3546,7 +3549,7 @@ input, select, textarea {
 			display: block;
 			height: 100%;
 			left: 0;
-			opacity: 0.75;
+			opacity: 0.85;
 			position: absolute;
 			top: 0;
 			width: 100%;
@@ -3664,7 +3667,6 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			#banner {
-				background-attachment: scroll;
 			}
 
 		}
@@ -3678,6 +3680,9 @@ input, select, textarea {
 				max-height: none;
 				min-height: 0;
 				top: -2.75em;
+				background-attachment: absolute;
+				background-repeat: no-repeat;
+				background-size: 100%;
 			}
 
 				#banner h1 {
@@ -3700,11 +3705,17 @@ input, select, textarea {
 				}
 
 		}
+		@media screen and (max-width: 640px) {
+			#banner {
+				background-image:url('../../images/bluediversmall.png') !important;
+			}
+		}
 
 		@media screen and (max-width: 480px) {
 
 			#banner {
 				padding: 6em 0 2em 0 ;
+				background-size:auto 100%;
 			}
 
 				#banner > .inner .content p br {
