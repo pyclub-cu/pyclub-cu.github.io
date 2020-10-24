@@ -3720,11 +3720,10 @@ input, select, textarea {
 			}
 
 				#banner > .inner .content p br {
-					display: none;
 				}
 
 				#banner.major {
-					padding: 8em 0 4em 0 ;
+					padding: 3em 0 4em 0 ;
 				}
 
 		}
