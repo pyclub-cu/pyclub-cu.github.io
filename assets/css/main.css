@@ -3715,6 +3715,7 @@ input, select, textarea {
 
 			#banner {
 				padding: 6em 0 2em 0 ;
+				background-image:url('../../images/bluediversmall.png') !important;
 				background-size:100% auto;
 			}
 
