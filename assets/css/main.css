@@ -3172,7 +3172,7 @@ input, select, textarea {
 
 
 			.spotlights > section {
-				display: block;
+				display: inline;
 			}
 
 			.spotlights > section > .image {
@@ -3181,7 +3181,8 @@ input, select, textarea {
 		}
 
 			.spotlights > section > .content {
-				padding: 3em 1.5em 1em 1.5em ;
+				padding: 3em 1.5em 3em 1.5em ;
+				width:100%;
 			}
 
 		}
