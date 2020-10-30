@@ -1794,7 +1794,7 @@ input, select, textarea {
 
 		header.major > :first-child {
 			margin-bottom: 0;
-			width: calc(100% + 0.5em);
+			width: calc(100% );
 		}
 
 			header.major > :first-child:after {
@@ -2290,6 +2290,7 @@ input, select, textarea {
 
 /* Actions */
 
+
 	ul.actions {
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -2358,6 +2359,7 @@ input, select, textarea {
 			ul.actions.fit.stacked {
 				width: 100%;
 			}
+
 
 /* Icons */
 
@@ -2733,6 +2735,34 @@ input, select, textarea {
 
 /* Team Page */
 
+.website-links {
+	position:relative;
+	float:left;
+	width:90%;
+}
+
+.inner.scrolly.up{
+	position:relative;
+	float:right;
+	width:10%;
+}
+
+.arrow {
+	position:relative;
+	bottom:0.3em;
+}
+
+div .arrow a{
+	border-bottom:none !important;
+	font-size:30px;
+	opacity: 0.6;
+}
+div .arrow a:hover{
+	border-bottom:none;
+	font-size:30px;
+	opacity:1;
+}
+
     .team-inner {
 		display: flex;
 		flex-wrap: wrap;
@@ -2763,17 +2793,23 @@ input, select, textarea {
 	}
 	
 	
-	.plus {
+	/* .plus {
 	  position: absolute;
 	  top: 40%;
 	  left: 50%;
 	  transform: translate(-50%, -50%);
 	  opacity:0;
 	  z-index:4;
-	} 
+	}  */
+	
+	.plus {
+		position: relative;
+		float: right;
+		margin-right:5px;
+	}
 	
 	.plus a {
-		font-size:150px;
+		font-size:20px;
 		text-decoration:none;
 		border: none;
 	}
@@ -2790,6 +2826,11 @@ input, select, textarea {
 	.major img{
 		margin-left:20px;
 		margin-bottom:-5px;
+		max-width:100%;
+	}
+	
+	.major h4 {
+		float:left;
 	}
 	
 @media screen and (max-width: 1600px) {
