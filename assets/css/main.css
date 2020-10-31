@@ -2736,20 +2736,22 @@ input, select, textarea {
 /* Team Page */
 
 .website-links {
-	position:relative;
-	float:left;
+	display:block;
+	float: left;
 	width:90%;
 }
 
-.inner.scrolly.up{
+/*.inner.scrolly.up{
 	position:relative;
 	float:right;
 	width:10%;
-}
+}*/
 
 .arrow {
-	position:relative;
-	bottom:0.2em;
+position:relative;
+bottom:0.2em;
+width:10%;
+float: right;
 }
 
 div .arrow a{
